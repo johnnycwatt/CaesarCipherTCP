@@ -1,0 +1,90 @@
+- - - CLIENT-SIDE EXAMPLE - - -
+client ::1 1234
+
+Winsock 2.2 initialized.
+
+<<<Caesar Cipher TCP Client>>>
+IPv6 mode enabled.
+Connecting to ::1 on port 1234
+Connected to server at ::1:1234
+Type here: encrypt 3 hello
+Message Sent --->>>: encrypt 3 hello
+
+Message Received --->>>: Encrypted with shift 3: khoor
+
+Type here: decrypt 3 khoor
+Message Sent --->>>: decrypt 3 khoor
+
+Message Received --->>>: Decrypted with shift 3: hello
+
+Type here: 5 secret
+Message Sent --->>>: 5 secret
+
+Message Received --->>>: Encrypted with shift 5: xjhwjy
+
+Type here: decrypt 5 xjhwjy
+Message Sent --->>>: decrypt 5 xjhwjy
+
+Message Received --->>>: Decrypted with shift 5: secret
+
+Type here: encrypt 30 zebra
+Message Sent --->>>: encrypt 30 zebra
+
+Message Received --->>>: Encrypted with shift 30: difve
+
+Type here: decrypt 30 difve
+Message Sent --->>>: decrypt 30 difve
+
+Message Received --->>>: Decrypted with shift 30: zebra
+
+Type here: encrypt the money is hidden under the mattress
+Message Sent --->>>: encrypt the money is hidden under the mattress
+
+Message Received --->>>: Encrypted with shift 3: wkh prqhb lv klgghq xqghu wkh pdwwuhvv
+
+Type here: decrypt wkh prqhb lv klgghq xqghu wkh pdwwuhvv
+Message Sent --->>>: decrypt wkh prqhb lv klgghq xqghu wkh pdwwuhvv
+
+Message Received --->>>: Decrypted with shift 3: the money is hidden under the mattress
+
+Type here: .
+
+Shutting down ...
+
+
+- - - SERVER-SIDE EXAMPLE - - -
+
+server.exe
+Winsock 2.2 initialized.
+
+<<<Caesar Cipher TCP Server>>>
+IPv6 mode enabled.
+Using default port number: 1234
+Server listening on port 1234...
+
+Client Connected: ::1:61536
+Message received <<<---: encrypt 3 hello
+Message sent: Encrypted with shift 3: khoor
+
+Message received <<<---: decrypt 3 khoor
+Message sent: Decrypted with shift 3: hello
+
+Message received <<<---: 5 secret
+Message sent: Encrypted with shift 5: xjhwjy
+
+Message received <<<---: decrypt 5 xjhwjy
+Message sent: Decrypted with shift 5: secret
+
+Message received <<<---: encrypt 30 zebra
+Message sent: Encrypted with shift 30: difve
+
+Message received <<<---: decrypt 30 difve
+Message sent: Decrypted with shift 30: zebra
+
+Message received <<<---: encrypt the money is hidden under the mattress
+Message sent: Encrypted with shift 3: wkh prqhb lv klgghq xqghu wkh pdwwuhvv
+
+Message received <<<---: decrypt wkh prqhb lv klgghq xqghu wkh pdwwuhvv
+Message sent: Decrypted with shift 3: the money is hidden under the mattress
+
+Client disconnected.
